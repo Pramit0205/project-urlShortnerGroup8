@@ -8,7 +8,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 
-mongoose.connect("mongodb+srv://Bhawna_Agrawal:bhawnaagrawal@cluster0.zk2kv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", 
+mongoose.connect("mongodb+srv://blogging:eRGtwmBPsExHSfUI@cluster0.dnqcr.mongodb.net/group8Database?retryWrites=true&w=majority", 
     {
         useNewUrlParser: true
     }
