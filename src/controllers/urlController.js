@@ -33,7 +33,7 @@ const shorten = async function(req,res){
     try
     {
         // Extract Param
-        const {longUrl} = req.body 
+        const {longUrl} = req.body
 
         if(!longUrl){
             return res.status(400).send({status:false, message:'Long-Url is Required'})
@@ -69,7 +69,7 @@ const shorten = async function(req,res){
         let newObj = {
             longUrl : longUrl,
             shortUrl : shortUrl,
-            urlCode : urlCode
+            urlCode : urlCode.trim().toLowerCase()
         }
  
         await urlModel.create(newObj)
